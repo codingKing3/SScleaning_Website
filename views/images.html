@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Cleaning Images</title>
+		<link href="styles.css" rel="stylesheet" type="text/css" />
+        <link href="layout.css" rel="stylesheet" type="text/css" />
+		<style type="text/css">
+		<style type="text/css">
+			body {                  /* State your own web page text color, 
+			                           background color and 
+						                 font family */ 
+	            /* I connected to my Styles.css page, to keep pages the same*/									 
+				/*color: ;
+				background-color: ;
+				font-family: ; */
+				}
+				
+			.wrapper {               /* Add the horizontal size for your 3 images across:
+												+Add the size of your 3 images plus 
+												+Add the size of the margin between your 3 images */
+				width:945px; 				 /* was 720px */
+				margin: 10px auto;    /* Center the images horizontally /*
+				
+				}
+				
+			.header {
+			   	margin:40px 0px 20px 0px ; 			 /* Change the margin around your header area */
+				text-align: center;        
+				}
+				
+			.header h1{			    			
+			   	/*color:; */           /* Pick a color for your h1 text in the header */ 
+				text-align: center; /* Pick how you will align your h1 text */
+				}
+				
+			.entry {    /* 1) State your figure image width below first, in "figure img", then 
+			               2) State in "figure" width below: make it a bit larger than the "figure img" size
+ 						       (to create a box for your image and figcaption)
+						     3) Finally, state your "entry" class width below a bit larger than the "figure" width
+							     (to force the left the box around your figure/figcaption)
+						 */		 
+				width: 335;  	       /* was 220px  Pick your width using info above */
+				float: left;
+				margin:40px;         /* was 10px    Pick your margin between figures */
+				height: 275px;         /* was 198px   Pick a height for your figures   */
+				background-color:white ; /* Pick a color as a backup for the figure background color */     
+				}
+				
+			figure {
+				display: block;   
+				width: 330px;        /* was 202px  Pick a width for your img and figcaption */
+				height: 255px;       /* was 170px  Pick a height for your img and figcaption*/
+				background-color:white ;  /* Pick a color around your img and figcaption */  
+				margin: 0;
+				padding: 9px;       
+				text-align: center;  /* was left */
+				
+				}
+				
+			figure img {
+				width: 324px;       /* was 200px State the width of your images*/
+				height: 240px;      /* was 150px State the height of your images */
+				border:1px solid black ;           /*   State border around image */
+				}
+				
+			figcaption {
+			    text-align: center; /* Pick a style to align your image's caption text */
+					}
+			/* Add credits at the bottom for your images any way you like,
+             as long as they are readable and look good with your images
+          */			 
+			#credits-left { 
+			 float: left;
+             margin-top: 100px;
+			   margin-bottom: 40px;
+			   margin-left: 0px;
+				width: 50%;
+				height: 15%;
+				padding: 5px;
+				font-size: 80%;}	
+				
+			#credits-right {
+				float: right;  
+				margin-top: 100px;
+			   margin-bottom: 40px;
+			   padding: 5px;
+				width: 40%;
+				height: 15%;
+				font-size: 80%;}	
+			li {
+				display: inline; /* Your navigation list items will display horizontally */
+				padding: 0.5em;} 	
+			ul {
+				width: 650px; /* was 570 */
+				padding: 15px;
+				margin: 0px auto 0px auto;
+				border-top: 2px solid #000;
+				border-bottom: 1px solid #000;
+				text-align: center;}	
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="header"> <!-- Add your own heading and introductory paragraph text -->
+				<h1><img src="images/cleanerFloor.jpg" alt="animation pic of person with mop and bucket"width="179" height "188"  />	</h1>
+				<ul>				
+		              <li><a href="index.html">Home</a></li>
+			          <li><a href="images.html">Images</a></li>			          
+			          <li><a href="resources.html">Resources</a></li>			         
+			          <li><a href="contact.html">Contact</a></li>
+		        </ul>
+				<h2>Service Star Cleaning Specialist</h2>
+				<p>Images of Cleaner making your area look better</p>
+			</div>
+			<div class="entry"> <!-- Add your image name (location if in images folder), alt info and caption text -->
+				<figure><img src="images/cleaningScaled.jpg" alt="women Cleaning office" />
+					<figcaption>Office Cleaner</figcaption>
+				</figure>
+			</div>
+			<div class="entry"> <!-- Add your image name (location if in images folder), alt info and caption text -->
+				<figure><img src="images/Bonnet2.jpg" alt="Carpet being bonnet cleaned" />
+					<figcaption>Bonnet Cleaning Carpet</figcaption>
+				</figure>
+			</div>
+			<div class="entry"> <!-- Add your image name (location if in images folder), alt info and caption text -->
+				<figure><img src="images/PowerWashing3.png" alt="Man power washing concret" />
+					<figcaption>Power Washing</figcaption>
+				</figure>
+			</div>
+			<!-- Optional-you can add three more photos or hide these three div sets --> 
+			<div class="entry"> <!-- Add your image name (location if in images folder), alt info and caption text -->
+				<figure><img src="images/Windows1.jpg" alt="Men cleaning windows outside" />
+					<figcaption>Window Cleaning</figcaption>
+				</figure>
+			</div>
+			
+			<div class="entry" style="visibility: hidden> <!-- Add your image name (location if in images folder), alt info and caption text -->
+				<figure><img src="" alt="" />
+					<figcaption></figcaption>
+				</figure>
+			</div> 
+			
+			<div class="entry" style="visibility: hidden> <!-- Add your image name (location if in images folder), alt info and caption text -->
+				<figure><img src="" alt="" />
+					<figcaption></figcaption>
+				</figure>
+			</div>
+			<!-- You can display your credits using paragraph tags with br tags separating them
+			     you don't have to do what I did..with the styles for the credits -->
+				 
+	       		 
+			<div id="credits-left">
+			
+			 	Alterfines [<a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en"></a> CC0 1.0 Universal (CC0 1.0)</a>] <a href="https://pixabay.com/en/cleaning-employment-work-office-1909978/">via Pixabay</a> <br />
+				
+				Sean Mulgrew <a href="https://creativecommons.org/licenses/by-nc/2.0/"></a>CC-BY-SA-2.0<a href="https://www.flickr.com/photos/janitorialservicemaryland/13978555896/in/photolist-nieKEq-7kesL-mYccNM-bzqpsx-72SPaN-6FYSgv-asHCWk-5iXd6t-axCXsh-w4KLe-e1vXa4-NdAUQ-bpkyr9-axAfwt-7pYvPY-ocZHz7-dmYqHk-6Skfj-o4oURn-roCJtM-4y3jpQ-a47NRV-4QwZLz-63kJpW-9wbapz-a3ozZU-cBCHdG-4G9NZo-4G5CRP-gZuUmb-a4Ee9Z-avey8r-3gXSyw-2icjgS-9wb6YH-5pTmfD-9JfZXw-4Fs7Aq-5AQVje-5AVbhj-DpZjVr-7gGDh2-avhehb-asLgxb-9whoT5-FuEHh-bwb7gp-avexTc-8K6FfD-62P4VG/">, via Flickr</a><br /> 	
+
+				
+				Rick kloeppel  <a href="https://creativecommons.org/licenses/by/2.0/">CC-BY-SA-2.0</a>, <a href="https://www.flickr.com/photos/76584561@N00/5121615809/">, via flickr</a> <br  />
+				
+				Calvin Hsu <a href="https://creativecommons.org/licenses/by/2.0/">CC-BY-SA-2.0</a>, <a href="https://www.flickr.com/photos/calvinhsu/3446943441/sizes/o/">, via flickr</a> <br  />
+				
+				3dman_eu<a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC-BY-SA-1.0</a>, <a href="https://pixabay.com/en/cleaning-lady-cleaner-clean-1816357/">, via Pixabay</a> <br  />
+			</div>
+          <!--<div id="credits-right" style="visibility: hidden>
+		       Daniel Mayer (Mav) (Own work) [<a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>], <a href="https://commons.wikimedia.org/wiki/File%3ARocky_Mountain_National_Park_in_September_2011_-_Sprague_Lake.JPG">via Wikimedia Commons</a> <br />
+			   	Charles Dawley from Petoskey [<a href="http://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>] <a href="https://commons.wikimedia.org/wiki/File%3ACrater_lake_oregon_usa.jpg">via Wikimedia Commons</a><br /> 
+				Introvert (Own work) [<a href="http://creativecommons.org/licenses/by-sa/2.5">CC BY-SA 2.5</a>], <a href="https://commons.wikimedia.org/wiki/File%3ACinder-cone-from-behind-Snag-Lassen.jpg">via Wikimedia Commons</a> <br />
+		  </div> -->    			
+		<!--</div>-->
+		
+	</body>
+</html>

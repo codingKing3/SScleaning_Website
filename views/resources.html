@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Cleaning At Work</title>
+		<link href="styles.css" rel="stylesheet" type="text/css" />
+        <link href="layout.css" rel="stylesheet" type="text/css" />
+		<style type="text/css">
+		body{
+		      width: 90%
+			  margin: 0 auto;}
+			  
+		#page {
+				max-width: 1500px; /* 940px */
+				min-width: 920px;
+				margin: 10px auto 10px auto;
+				padding: 3px;  /* 20px */
+				border: 4px double #000;
+				background-color:#ffffff;}
+				
+		#content {
+				overflow: auto;} /* If you have too much text, it won't overlay each other */ 
+				
+			#nav, #feature, #footer { /* Up to you if you want to center nav, feature/footer */
+				margin: 1%;
+				text-align: center;}  
+				
+		   	#header {text-align: center;}	/* Up to you if you want to center header area */ 	
+							   
+			.column1, .column2, .column3 { /* Tip: You may want to left align text or add padding */
+				width: 31.3%;  /* Each column in the middle of the page will take up 1/3 of the web page */
+				float: left;   /* Each column will float to the left of the web page */
+				margin: 1%;}   /* Adds space between columns */
+				
+			.column3 {
+				margin-right: 0%;} 
+				
+			li {
+				display: inline; /* Your navigation list items will display horizontally */
+				padding: 0.5em;} 
+				
+			#nav, #footer { /******* add background-color for the nav and footer areas */
+				background-color:#42f44b; /* soft Green */ ;
+				padding: 0.5em 0;}
+				
+			#feature, .article { /******* add background-color for the feature and article (columns) areas */
+				height: 10em;  /* You may need to provide different heights for #feature and .article
+                          so you'd need to create styles just for #feature and just for .article	*/
+				margin-bottom: 1em;
+				background-color:#42f44b; /* soft Green */ ;}
+			#feature{ height: 100px;
+                      }			
+			#header img { /* optional: if you want to display an image in the header area; add w/h here */
+			   width: 98%;
+			   height: 7em; }
+			   
+          #feature img { /* optional: if you want to display an image in the feature area add w/h here */
+			   width: 100%;
+			   height: 60%; }
+		
+		#logo {		        
+				width: 145px;
+				height: 170px;
+				margin: 15px auto 15px auto;}
+				
+		ul {
+				width: 650px; /* was 570 */
+				padding: 15px;
+				margin: 0px auto 0px auto;
+				border-top: 2px solid #000;
+				border-bottom: 1px solid #000;
+				text-align: center;}		
+			
+		</style>
+	</head>
+	<body>
+	<style>
+	  h1{ background-color:#adf442;
+	      text-align:center;
+	      height:85px; }	
+	  h3{ color: black; 
+	        background-color: #adf442; /* light green */
+	        font-family: Verdana,"Century Gothic",sans-serif;	 
+	        font-weight:bold;
+			text-align:center;}
+	  h2{ color: #4542f4; /* soft blue*/
+	      background-color:white /*#42f44b; /* soft Green */
+	      font-size: 2.5em;
+          width= 100%	}  
+	
+	  
+	</style>
+	<h1>Service Star Cleaning Specialist</h1>
+	   <div id="page">  <!-- FYI: The "page" id affects most of your web page -->
+		  	<div id="logo">
+			     <!-- UPDATE THIS!
+				       In the img src, add the name of your image file 
+					   you've saved in your images folder and 
+					   update the alt value with a description of your image-->
+				<img src="images/cleanerFloor.jpg" alt="animation pic of person with mop and bucket"width="179" height "188" />
+			</div>
+			
+			<ul>
+				<li><a href="index.html" class="on">Home</a></li>
+				<li><a href="images.html">Images</a></li>				
+				<li><a href="resources.html">Resources</a></li>				
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+	
+	
+		<p>What to look for in your office Cleaning Service: 
+		<a href="http://smallbusiness.chron.com/choose-cleaning-service-business-819.html" target="_blank">Choosing a Cleaning Service</a>.
+		   (opens in a new window)
+		</p>
+	<h3>Information about different Services </h3>	
+			<ul>
+				<li><a href="http://www.wikihow.com/Clean-Windows" target="_blank">Window Cleaning</a></li>
+				<li><a href="http://www.consumerreports.org/cro/news/2015/05/pros-and-cons-of-gas-and-electric-pressure-washers/index.htm" target="_blank">Pressure Washers</a></li>
+				<li><a href="https://www.angieslist.com/articles/4-carpet-cleaning-methods-pros-and-cons.htm" target="_blank">Carpet Cleaning</a></a></li>
+				<li><a href="http://www.ehow.com/facts_7451765_involved-new-construction-cleanup_.html" target="_blank">New Construction Cleaning</a></li>
+			</ul>
+	
+	  <!-- ADDED -->
+      <div id="content">
+			<div id="feature"> <!-- Add your info in the p tag below about your web page; optional, add an image and height/width in styles area above -->
+				<p>At Service Star Cleaning when we finish providing service we want you to think to yourself," Yes I would Call Service Star Cleaning again".</p>
+			</div>
+			<div class="article column1"> <!-- Add some info about your web page in first column in the paragraph below -->
+				<p><strong>Office Cleaning:</strong> The service that can help brighten your day. After a hectic day of working, we want you to leave your office knowing that <strong>Service Star Cleaning</strong> is coming through.</p> 
+			</div>
+			<div class="article column2"> <!-- Add some info about your web page in second column in the paragraph below -->
+				<p><strong>Carpet Cleaning:</strong> Whether it is a full steam cleaning or a touch up bonnet cleaning  service for a major event or an  important client, Give Service Star Cleaning a call or an email for a great rate.</p>
+			</div>
+			<div class="article column3"> <!-- Add some info about your web page in third column in the paragraph below -->
+				<p><strong>Window Cleaning:</strong> Window washing is not high on anybodys to do list. At Service Star Cleaning we will put it high on our list, so give us a call and let the sun shine in through spot free windows.</p>
+			</div>
+		</div>
+		<div id="footer"> <!-- Add your image credits or copyright info in the paragraph below -->
+			<p>&copy; Copyright 2016</p>
+		</div>	  
+	</body>
+</html>

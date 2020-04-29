@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title> Contact Us
+  </title>
+  <meta name="author" content="John King" />
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <link href="layout.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+    li{list-style-type:Square;}
+    li:hover{
+	        background-color:#ADD8E6;
+         	list-style-type:circle ;
+			line-height: 2.0em;} 
+			
+	fieldset {
+				width: 710px; /* want a larger area? increase the width */
+				margin-top:10px;            /* add the size of the margin above the fieldset */
+				border: 1px solid #4542f4;     /* replace the border color at minimum */
+				/*background-color: ; went with sytles sheet css :add the background-color for the form */
+				line-height: 1.6em;}
+			legend {        /* these styles will affect your legend title */
+			    background-color: white;
+				border:1px solid #4542f4; /* soft blue */
+				border-radius:5px;
+				-moz-border-radius:5px;
+				-webkit-border-radius:5px;
+				font-style: italic;              /* add the font-style */
+				font-family:verdana,helvetica,sans-serif;
+				font-weight:bold;				
+				color: black ;}                  /* and add the color of the legend text */
+	/* 	The input[type="text"] properties will only affect the 
+          name and email text boxes - change the values so they look good
+		   when you view or when you hover over the two input boxes */
+		  
+			input[type="text"] {
+				width: 175px;
+				border: 1px solid #4542f4;  /* soft blue */
+				padding: 5px;            /* you can change the padding between the input fields */ 
+				outline: none;}
+			input[type="text"]:focus,
+			input[type="text"]:hover {
+				background-color: #F2F2F2  ;  /* Gray95 */
+				border: 1px solid #4542f4 ;}   /* soft blue */	
+
+	        input[type="submit"] {
+				border: 1px solid #0000A0 ;  /* dark blue */
+				background-color:black ;  /* add the button's background-color */
+				color:white ;             /* add the button's text color */
+				border-radius: 5px;  /* add the other border-radius options so it will work in all browsers */
+				padding: 5px;        /* change your padding if needed */
+				margin-top: 10px;}   /* change the margin between the button and form above it */
+			input[type="submit"]:hover {
+				border: 1px solid ;  /* add/replace the border color at minimum */
+				background-color:#0000A0 ;  /* dark blue */
+				color:yellow ;   			 /* yellow when hover over */ 	
+				cursor: pointer;}			
+  
+  </style>
+  
+ </head>
+ <body> 
+     <h1>Contact Us for a Free Estimate</h1>
+        <ul>				
+		    <li><a href="index.html">Home</a></li>
+			<li><a href="images.html">Images</a></li>			
+			<li><a href="resources.html">Resources</a></li>			
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	  
+     
+  
+  <form action="http://www.example.com/form.php" method="get">
+			<fieldset>
+			   
+				<legend>Your Info:</legend>
+				<p><label class="title" for="name">Your name:</label><br/>
+					 <input type="text" name="name" id="name"><br /><br/>
+					 <label class="title" for="email">Your email:</label><br/>
+					 <input type="text" name="email" id="email"></p>				 
+				<p>
+					<label class="title" for="hear-about">How did you hear about us?</label>
+					<select name="referrer" id="hear-about">
+						<option value="Web search">Web Search</option>
+						<option value="facebook">Facebook</option>
+						<option value="Word of Mouth">Word of Mouth</option>
+						<option value="other">Other</option>
+					</select>
+				</p>
+      			<!-- Change the question and option value/text to match your form -->	
+				<p><label for="location" class="title">When was the last time you had your office cleaned?:</label>
+					 <select name="location" id="location">
+						 <option value="Month">Month</option>
+						 <option value="6 Months">6 Months</option>
+						 <option value="Year">Year +</option>
+					 </select></p>
+					<label class="title"><input type="checkbox" name="subscribe" checked="checked" /> Sign me up for email updates</label><br />
+			</fieldset>
+ 	    
+		</form>
+  <fieldset>
+    <legend>Which service are you interested in:</legend>
+	<P>
+	  <label for="Service Request">Service Type:</label>
+	  <select name="service" id="Service Request">
+	    <option value="office cleaning">Office Cleaning</option>
+        <option value="carpet cleaning">Carpet Cleaning</option>		
+		<option value="window cleaning">Window Cleaning</option>
+		<option value="power washing">Power Washing</option>
+			  
+	  </select>	
+	</P>
+    
+	<p>
+	   <label for="message">Additions information about your request:</label><br />
+	   <textarea rows="7" cols="40" id="message" placeholder="add message"></textarea>
+    </P>
+	   <div class="submit"><input type="submit" value="Submit" /></div>
+  </fieldset>
+  
+  </form>	
+ </body> 
+
+</html>
