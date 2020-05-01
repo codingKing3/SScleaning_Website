@@ -4,19 +4,19 @@
 				font-size: 70%;
 				font-family: Arial, Helvetica, sans-serif;
 				letter-spacing: 0.17em;  	
-                background-color: #adf442  ;
+              /*  background-color: #adf442  ; */
             } 
 				
 			
 			#page {
 				max-width: 1500px; /* 940px */
 				min-width: 920px;
-				margin: 10px auto 10px auto;
-				padding: 30px;  /* 20px */
-				border: 4px double #000;
-				background-color: #ffffff;}
-				
-			
+				margin: auto;                /*10px auto 10px auto;*/
+				padding: 0px;  /* 20px */
+				/*border: 4px double #000;*/
+				background-color: #ffffff;
+			}
+					
 			#logo {
 				width: 179px;
 				height: 188px;
@@ -24,7 +24,7 @@
 				
 			
 			ul {
-				width: 650px; /* was 570 */
+				width: 750px; /* was 570 */
 				padding: 15px;
 				margin: 0px auto 0px auto;
 				border-top: 2px solid #000;
@@ -40,10 +40,6 @@
 			    font-size: large;   
 			}
 			
-			ul li:hover{
-              background-color: green;
-               
-			}	
 			p {
 				text-align: center;
 				width: 600px; 
@@ -51,14 +47,7 @@
 				font-weight: normal;
 				font-size: 2.0em;}
 				
-			/* For a new class "pbox" selector, you'll create a box
-  			        around your copyright statement at the bottom of the web page
-             The box can have the same 4 properties/values as the "p" tag, but add the following:
-             1) Add a border width, style, and color (with whatever color looks well)
-             2) Add a background-color (with whatever color looks well)
-             3) Add a shadow for your box that will display in most web browsers
- 			     (with whatever color looks good)
-          */ 			 
+			 
 			.pbox {
 			/* Figure out 1, 2, and 3 above and it your CSS styles here! */	
 				
@@ -83,10 +72,17 @@
 			/* update the anchor hover and first link-
 			   change the color and background colors!
 			*/  	
-			a:hover, a.on {
+			a:hover{
 				color: #cc3333;
 				background-color: #ffffff;}
-	    h1{ background-color:#adf442;
-		  text-align:center;
-		  text-size-adjust: ;
-	      height:150px; }
+	    h1{ 
+		 /* background-image: url("images/Misc067.jpg");	*/
+		  background-color:#adf442; 
+		  text-align:center;		  
+		  height:100px; }
+		h2{
+			text-align: left;
+		}  
+		#p_number{
+			display:none;
+		}  
