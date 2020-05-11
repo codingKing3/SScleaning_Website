@@ -14,8 +14,7 @@
 				max-width:100% ; /*1500px 940px */
 				min-width: 920px;
 				margin: auto;                /*10px auto 10px auto;*/
-				padding: 0px;  /* 20px */
-				/*border: 4px double #000;*/
+				padding: 0px;  /* 20px */				
 				background-color: #ffffff;
 			}
 					
@@ -27,11 +26,8 @@
 			
 			ul {
 				width: 750px; /* was 570 */
-				padding: 15px;
-				margin: 0px auto 0px auto;
-				border-top: 2px solid #000;
-				border-bottom: 1px solid #000;
-				text-align: center;
+				margin: 0px auto 0px auto;			
+				text-align: center;				
 			}
 				
 				
@@ -68,6 +64,7 @@
 			a {
 				color: #000000;
 				text-transform: uppercase;
+				font-family: 'Lato', sans-serif;
 				text-decoration: none;
 				padding: 6px 18px 5px 18px;}
 				
@@ -79,7 +76,11 @@
 				background-color: #ffffff;}
 	    h1{ 
 		 /* background-image: url("images/Misc067.jpg");	*/
+<<<<<<< HEAD
 		  font-family:Alfa Slab One,sans-serif;
+=======
+		 font-family: 'Modak', sans-serif;
+>>>>>>> 4ddbbabde23a8e81c053280cfb00f70aad1c8950
 		  background-color:#adf442; 
 		  text-align:center;		  
 		  height:100px; }
@@ -89,3 +90,4 @@
 		#p_number{
 			display:none;
 		}  
+		
