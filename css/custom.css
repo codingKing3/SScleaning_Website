@@ -1,6 +1,8 @@
 
 		  
 			body {
+				width: 90%;
+				margin: 0 auto;
 				font-size: 70%;
 				font-family: Arial, Helvetica, sans-serif;
 				letter-spacing: 0.17em;  	
@@ -9,7 +11,7 @@
 				
 			
 			#page {
-				max-width: 1500px; /* 940px */
+				max-width:100% ; /*1500px 940px */
 				min-width: 920px;
 				margin: auto;                /*10px auto 10px auto;*/
 				padding: 0px;  /* 20px */
@@ -77,6 +79,7 @@
 				background-color: #ffffff;}
 	    h1{ 
 		 /* background-image: url("images/Misc067.jpg");	*/
+		  font-family:Alfa Slab One,sans-serif;
 		  background-color:#adf442; 
 		  text-align:center;		  
 		  height:100px; }
