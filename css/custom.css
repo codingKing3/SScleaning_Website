@@ -1,44 +1,51 @@
 
 		  
 			body {
-				width: 90%;
+				width: 100%;
 				margin: 0 auto;
 				font-size: 70%;
 				font-family: Arial, Helvetica, sans-serif;
-				letter-spacing: 0.17em;  	
+				letter-spacing: 0.17em;
+				background-image: url("../images/commercialRestroom2.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+				
+					
               /*  background-color: #adf442  ; */
             } 
 				
-			
-			#page {
-				max-width:100% ; /*1500px 940px */
-				min-width: 920px;
-				margin: auto;                /*10px auto 10px auto;*/
-				padding: 0px;  /* 20px */				
-				background-color: #ffffff;
-			}
+		
 					
 			#logo {
 				width: 179px;
 				height: 188px;
 				margin: 10px auto 25px auto;}
 				
+            #mott_space{		 
+
+			float:right;
 			
-			ul {
-				width: 750px; /* was 570 */
-				margin: 0px auto 0px auto;			
-				text-align: center;				
-			}
-				
-				
-			li {
-				display: inline;
-				margin: 0px 3px;
-				font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-			    font-size: large;   
-			}
+		}
+		#motto{
+			font-size: medium;
+			text-align: right;		
+			color: black;
+			/* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 			
-			p {
+		}
+		#mott_space #motto{
+			padding-bottom: 0%;
+			vertical-align: bottom;
+		}
+		nav{
+			padding-bottom: 1em;
+		}
+		
+
+
+
+			
+			#about_star_story,#p_number {
 				text-align: center;
 				width: 600px; 
 				margin: 20px auto 20px auto; 
@@ -47,8 +54,7 @@
 				
 			 
 			.pbox {
-			/* Figure out 1, 2, and 3 above and it your CSS styles here! */	
-				
+						
 				
 				border: 1px solid black;
 				border-radius: 10px;
@@ -64,7 +70,8 @@
 			a {
 				color: #000000;
 				text-transform: uppercase;
-				font-family: 'Lato', sans-serif;
+				/*font-family: 'Lato', sans-serif;*/
+				font-size: large;
 				text-decoration: none;
 				padding: 6px 18px 5px 18px;}
 				
@@ -73,17 +80,103 @@
 			*/  	
 			a:hover{
 				color: #cc3333;
-				background-color: #ffffff;}
+			/*	background-color: #ffffff; */
+				font-size: x-large;
+			
+			}
 	    h1{ 
 		 /* background-image: url("images/Misc067.jpg");	*/
-		 font-family: 'Modak', sans-serif;
-		  background-color:#adf442; 
+		 font-family: 'Spectral', serif;
+		 /*font-family: 'Modak', sans-serif;*/
+		 /* background-color:#adf442;*/ 
 		  text-align:center;		  
 		  height:100px; }
 		h2{
 			text-align: left;
 		}  
+
 		#p_number{
 			display:none;
+			width: 300px;
+			margin-top: 0em;
 		}  
+		.jumbotron{
+			position: relative;
+			background-color: cornflowerblue;
+			 
+		}
+		#phone_block{
+			text-align: right;
+		}
 		
+		.gelType{
+			font-family: 'Montserrat', sans-serif;
+		}
+	   
+
+     /*=================================================================================================================================================== */
+		/* css for contact portion of website  */
+
+		li{list-style-type:Square;}
+		li:hover{
+				background-color:#ADD8E6;
+				 list-style-type:circle ;
+				line-height: 2.0em;} 
+				
+		fieldset {  
+			        font-family: 'Montserrat', sans-serif;;
+					font-weight: bold;
+					font-size: medium;
+					width: 1000px; /* want a larger area? increase the width */
+					margin-top:10px;            /* add the size of the margin above the fieldset */
+					margin-left: 450px;
+					border: 1px solid #4542f4;     /* replace the border color at minimum */
+					/*background-color: ; went with sytles sheet css :add the background-color for the form */
+					line-height: 1.6em;
+				     
+				}
+					
+				legend {        /* these styles will affect your legend title */
+					background-color: white;
+					border:1px solid #4542f4; /* soft blue */
+					border-radius:5px;
+					-moz-border-radius:5px;
+					-webkit-border-radius:5px;
+					font-style: italic;              /* add the font-style */
+					font-family:'lato',helvetica,sans-serif;
+					font-weight:bold;				
+					color: black ;}                  /* and add the color of the legend text */
+		/* 	The input[type="text"] properties will only affect the 
+			  name and email text boxes - change the values so they look good
+			   when you view or when you hover over the two input boxes */
+			  
+				input[type="text"] {
+					font-family: 'Montserrat', sans-serif;;
+					font-weight: bold;
+					width: 300px; /* 175px was */
+					height: 50px;
+					border: 1px solid #4542f4;  /* soft blue */
+					padding: 5px;            /* you can change the padding between the input fields */ 
+					outline: none;}
+				input[type="text"]:focus,
+				input[type="text"]:hover {
+					background-color: #F2F2F2  ;  /* Gray95 */
+					border: 1px solid #4542f4 ;}   /* soft blue */	
+	
+				input[type="submit"] {
+					border: 1px solid #0000A0 ;  /* dark blue */
+					background-color:black ;  /* add the button's background-color */
+					color:white ;             /* add the button's text color */
+					border-radius: 5px;  /* add the other border-radius options so it will work in all browsers */
+					padding: 5px;        /* change your padding if needed */
+					margin-top: 10px;}   /* change the margin between the button and form above it */
+				input[type="submit"]:hover {
+					border: 1px solid ;  /* add/replace the border color at minimum */
+					background-color:#0000A0 ;  /* dark blue */
+					color:yellow ;   			 /* yellow when hover over */ 	
+					cursor: pointer;}
+
+					#bottomPage{
+						/* background-color: cornflowerblue; */
+						background: rgba(100,149,237,.50);
+					}
