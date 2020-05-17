@@ -1,7 +1,7 @@
 $(function(){
 
 //$("#turnOff").hide(); //slow , fast
-$("a").eq(1).hide();
+$("a").eq(1).hide(); // hiding link for later us
 $("a").eq(2).hide();
 $("h2").css("color","red");
 $("#phone_block").css({"padding-right":"0px"});
@@ -14,7 +14,12 @@ $("a").click(function(){
 
 });
 
-
+$("#mainNav").hover(function(){
+   $(this).css({"font-size":"50%"});
+});
+/*
+code to create smooth scroll
+*/
 
 
 
