@@ -1,10 +1,9 @@
 $(function(){
 
 //$("#turnOff").hide(); //slow , fast
-$("a").eq(1).hide(); // hiding link for later us
-$("a").eq(2).hide();
+//$("a").eq(1).hide(); // hiding link for later us
+//$("a").eq(2).hide();
 $("h2").css("color","red");
-$("#phone_block").css({"padding-right":"0px"});
 $("#p_number").css({"text-decoration":"underline"},{"width":"300px"});
 $("#p_number").show('slow');
 
