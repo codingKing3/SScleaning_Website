@@ -25,8 +25,8 @@
  <div id="page">
     <div class="container-flex " id="header">
      
-        <h1 class="display-5" id="header_company_name">SERVICE STAR CLEANING SPECIALIST </h1> 
-  </div> <!-- header container --> 
+        <h1 class="title" id="header_company_name">SERVICE STAR CLEANING SPECIALIST </h1> 
+   
         <div class="container ">
         <nav class ="navbar navbar-expand-xl mt-0 navbar-dark  " id= "main_nav">  
             <a class="navbar-brand" href="#"></a>
@@ -39,10 +39,10 @@
                <a href="#" class="on">Home</a> 
             
                    
-               <a class="nav-link  " href="views//images.html">Images</a>	   
+               <a class="nav-link" id="images-link"  href="views//images.html">Images</a>	   
           
             
-               <a class="nav-link  " href="views//resources.html">Resources</a> 
+               <a class="nav-link  " id="resources-link" href="views//resources.html">Resources</a> 
           
             
                <a class="nav-link  " href="#">Contact</a>  
@@ -66,6 +66,7 @@
        </div> 
      
     <!--</div> <Jumbotron container-->
+    </div> <!-- header container -->      
     <!--  about company   -->
      
    
@@ -84,6 +85,78 @@
       </div>  <!-- row--><!-- container for: about us section-->
    
     <!---  end of about company  -->
+    <!-- form area -->
+    <div id= "contactHeader">
+        <h1>Make a Appointment</h1>
+  
+    </div>
+  
+       <div class="bottom_Page " id="bottomPage">
+      <!--  <h1>Contact Us for a Free Estimate</h1>   -->	
+         
+  
+    <form action="http://www.example.com/form.php" method="get">
+      
+              <fieldset >
+      <!--  need to add address area   below -->		   
+                  <legend>Your Info:</legend>
+                  <p ><label class="title" for="name">Your name:</label><br/>
+                       <input type="text" name="name" id="name"><br /><br/>
+                       <label class="title" for="email">Your email:</label><br/>
+                       <input type="text" name="email" id="email"></p>	
+          <!--		 			 
+                  <p >
+                      <label class="title" for="hear-about">How did you hear about us?</label>
+                      <select name="referrer" id="hear-about">
+                          <option value="Web search">Web Search</option>
+                          <option value="facebook">Facebook</option>
+                          <option value="Word of Mouth">Word of Mouth</option>
+                          <option value="other">Other</option>
+                      </select>
+                  </p>    
+              -->	
+  
+                    <!-- Change the question and option value/text to match your form -->	
+                  <p ><label for="location" class="title">When was the last time you had your office cleaned?:</label>
+                       <select name="location" id="location">
+                           <option value="Month">Month</option>
+                           <option value="6 Months">6 Months</option>
+                           <option value="Year">Year +</option>
+                       </select></p>
+                      <label class="title"><input type="checkbox" name="subscribe" checked="checked" /> Sign me up for email updates</label><br />
+              </fieldset>
+           
+          </form>
+      <form>
+    <fieldset>
+      <legend>Which service are you interested in:</legend>
+      <p>
+        <label for="Service Request">Service Type:</label>
+        <select name="service" id="Service Request">
+          <option value="office cleaning">Office Cleaning</option>
+          <option value="carpet cleaning">Carpet Cleaning</option>		
+          <option value="window cleaning">Window Cleaning</option>
+          <option value="power washing">Power Washing</option>
+                
+        </select>	
+      </p>
+      
+      <p>
+         <label for="message">Additions information about your request:</label><br />
+         <textarea rows="7" cols="40" id="message" placeholder="add message"></textarea>
+      </p>
+         <div class="submit"><input type="submit" value="Submit" /></div>
+    </fieldset>
+    
+    </form>	  
+        
+  
+  </div> <!-- for contact section-->
+  
+
+
+
+    <!-- end form area-->
         
                 
     <p class="pbox" style="font-family:'Montserrat', sans-serif ;">

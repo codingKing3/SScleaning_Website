@@ -6,6 +6,9 @@ $(function(){
 $("h2").css("color","red");
 $("#p_number").css({"text-decoration":"underline"},{"width":"300px"});
 $("#p_number").show('slow');
+$("#images-link").css({"pointer-events":"none"});
+$("#resources-link").css({"pointer-events":"none"});
+
 
 // add below just to override anchors for now
 $("a").click(function(){
@@ -20,7 +23,17 @@ $("#mainNav").hover(function(){
 code to create smooth scroll
 */
 
+const change_size = window.matchMedia("max-width: 768px");
+const screenSize = document.documentElement.clientWidth;
 
+// listen for size change
+screenSize.addEventListener(function(){
+  if ($(window).width() < 768){
+      alert('reached size');
+      document.h1.style.fontSize = "21px";
+  }
+
+});
 
 
 
